@@ -1,0 +1,173 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Basic Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #333;
+  color: #333;
+}
+
+/* Header and Navigation */
+header {
+  background: ('imagenes/banner.jpg');
+  color: #333;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+}
+
+/* Sections */
+section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1000px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+/* Flexbox Layout for About Section */
+#sobre-mi {
+  display: flex;
+  align-items: center;
+}
+
+#sobre-mi p {
+  flex: 1;
+}
+
+.redes-sociales a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Hobbies and Skills Section */
+#hobbies h3 {
+  margin-top: 10px;
+}
+
+#hobbies p, #formacion p, #experiencia p {
+  margin-top: 10px;
+}
+
+/* Formación y Cursos */
+#formacion .course-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#formacion .course-images img {
+  max-width: 300px; /* Ancho máximo para las imágenes */
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Contact Form */
+#contacto form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contacto label {
+  margin-top: 10px;
+}
+
+#contacto input, #contacto textarea, #contacto button {
+  padding: 10px;
+  margin-top: 5px;
+}
+
+#contacto button {
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#contacto button:hover {
+  background: #555;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  clear: both; /* Añadido para evitar superposiciones */
+  position: relative; /* Añadido para ajustar el posicionamiento */
+  z-index: 1; /* Añadido para asegurar que esté sobre el contenido */
+}
+
+/* Responsive Styles */
+@media (max-width: 1440px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  #sobre-mi {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #sobre-mi img {
+    margin-bottom: 10px;
+  }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #formacion .course-images img {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  #formacion .course-images img {
+    width: 100%;
+  }
+}
